@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Result Management Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            Result Management System  
+        </div>
+    </nav>
+    <div>
+        <a href="/teacher/dashboard" class="btn btn-info" style="margin-top:20px;">Back</a>
+        <h2>Add Student-Result</h2>
+
+        <form method="POST" class="teacher_add_edit">
+            <div class="mb-3">
+                <label for="roll_number" class="form-label">Roll Number : </label>
+                <input type="number" name="roll_number" required class="form-control" id="roll_number">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name : </label>
+                <input type="text" name="name" required class="form-control" id="name" >
+            </div>
+            <div class="mb-3">
+                <label for="date_of_birth" class="form-label">Date of Birth : </label>
+                <input type="date" name="date_of_birth" class="form-control" id="date_of_birth">
+            </div>
+            <div class="mb-3">
+                <label for="marks" class="form-label">Marks : </label>
+                <input type="number" name="marks" required class="form-control" id="marks">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary"> Submit</button>
+                <button type="reset" class="btn btn-primary"> Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+

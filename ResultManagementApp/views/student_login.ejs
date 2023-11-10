@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Result Management Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            Result Management System  
+        </div>
+    </nav>
+
+    <a href="/" class="btn btn-info" style="margin-top:20px;">Back</a>
+
+    <h2>Student Login</h2>
+
+    <% if(error.length > 0) { %>
+        <div class="alert alert-success">
+           <p><%= error %></p> 
+        </div>
+    <% } %>    
+
+    <div class="student_login_div">
+        <form action="/student/result" method="POST" class="student_login">
+
+            <div class="mb-3">
+                <label for="roll_number" class="form-label">Roll number : </label>
+                <input type="number" name="roll_number" class="form-control" id="roll_number" required>
+            </div>
+            <div class="mb-3">
+                <label for="date_of_birth" class="form-label">Date of Birth : </label>
+                <input type="date" name="date_of_birth" class="form-control" id="date_of_birth" required>
+            </div>
+
+            <a><button type="submit" class="btn btn-primary">Submit</button></a>
+
+        </form>
+    </div>
+</body>    
+</html>

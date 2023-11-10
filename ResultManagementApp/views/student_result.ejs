@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Result Management Application</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            Result Management System
+            <a href="/" class="btn btn-info" style="float: right;">Logout</a> 
+        </div>
+    </nav>
+
+    <div>
+        <h2>Result of : <%= student.name %> </h2>
+        <div class="student_table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Roll number</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Date of birth</th>
+                        <th scope="col">Marks</th>
+                    </tr>
+                </thead>
+                <tbody>        
+                    <tr>
+                        <td><%= student.roll_number %> </td>
+                        <td><%= student.name %> </td>
+                        <td><%= student.date_of_birth %> </td>
+                        <td><%= student.marks %> </td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+    </div>
+</body>    
+</html>
+
+
